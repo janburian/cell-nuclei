@@ -46,7 +46,8 @@ def merge_smaller_images(divided_images: list, small_image_size_px, orig_image_s
 
 if __name__ == "__main__":
     img = skimage.io.imread("J7_5_a.png")
-    small_image_size = 10
+    # img = skimage.io.imread("cells.jpg")
+    small_image_size = 200
     [divided_images, orig_image_size] = divide_image(img, small_image_size)
     # for i in range(len(divided_images)):
     #     skimage.io.imsave("./divided_images/div_im" + str(i).zfill(3) + ".jpg", divided_images[i])
